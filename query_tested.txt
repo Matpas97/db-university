@@ -1,0 +1,31 @@
+
+// Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo schema allegato, eseguite le query del file allegato.
+La repo è la stessa di ieri
+
+
+
+1: SELECT `date_of_birth` FROM `students`;
+2: SELECT * FROM `COURSES` WHERE cfu > 10;
+3: SELECT * FROM `stundents` WHERE date_of_birth < 1992;
+4: SELECT * FROM `COURSES` WHERE `period`= "1 semestre" AND `YEAR`= 1;
+5: SELECT * FROM `exams` WHERE  HOUR(`hour`) >= 14 AND `date` = 20/06/2020;
+6: SELECT * FROM `degrees` WHERE `level` = "magistrale";
+7: SELECT COUNT(`id`) FROM `departments`;
+8: SELECT COUNT(*)  AS `numero_insegnanti` FROM `teachers` WHERE `phone` IS NULL;
+
+
+Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate un secondo file nella stessa repo di ieri (db-university) con le query di oggi.
+
+1: SELECT YEAR (`enrolment_date`) AS `year`, COUNT(*) AS `num_student` FROM `students` GROUP BY `year`
+2: SELECT COUNT(*), office_number FROM `teachers` GROUP BY `office_number` ORDER BY `total`DESC;
+3: SELECT AVG(VOTE) FROM `exam_student`;
+4: SELECT COUNT( `degrees`.`id`)  FROM `degrees` GROUP BY `department_id`;
+
+Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate un secondo file nella stessa repo di ieri (db-university) con le query di oggi.
+1: SELECT * FROM `students`  INNER JOIN `degrees` ON `students`_ `degrees_
+2:
+3:
+4:
+5:
+6:
+7:
